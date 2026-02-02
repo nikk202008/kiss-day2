@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiss Day • Yes!</title>
+    <meta name="theme-color" content="#ff6fae" />
+    <meta
+      name="description"
+      content="A cute Kiss Day page with sweet vibes, gifs, and floating hearts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <div class="blob blob-c"></div>
+    </div>
+
+    <main class="wrap">
+      <header class="hero">
+        <div class="hero__badge" aria-label="Kiss Day badge">
+          <span class="hero__badgeDot" aria-hidden="true"></span>
+          Kiss Day
+        </div>
+
+        <h1 class="hero__title">
+          Yay! <span class="accent">Mwah mwah</span>
+        </h1>
+        <p class="hero__subtitle">
+          Now it’s officially a cute Kiss Day moment.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--ghost" href="./index.html" role="button">
+            Back
+          </a>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="grid grid--yes">
+          <figure class="gifCard">
+            <div class="gifCard__frame">
+              <img
+                class="gifCard__img"
+                src="./kisssses.gif"
+                alt="Cute Kiss Day gif"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <figcaption class="gifCard__caption">
+              <span class="pill">for you</span>
+              <span class="captionText">A sweet kiss moment</span>
+            </figcaption>
+          </figure>
+
+          <div class="loveNote" aria-label="Love note">
+            <div class="loveNote__top">
+              <span class="loveNote__sticker" aria-hidden="true">kiss kiss</span>
+              <span class="pill pill--alt">mwah</span>
+            </div>
+            <p class="loveNote__title">A tiny love note</p>
+            <p class="loveNote__text" id="wishText">
+              “One kiss, a thousand smiles. Happy Kiss Day!”
+            </p>
+            <div class="loveNote__actions">
+              <button class="btn btn--primary" id="btnKiss" type="button">
+                Sprinkle hearts
+              </button>
+              <button class="btn btn--ghost" id="btnWish" type="button">
+                Copy a wish
+              </button>
+            </div>
+            <p class="loveNote__hint" id="wishTitle">Tap “Copy a wish” to change it.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__text">
+          Made with love • <span id="year"></span>
+        </p>
+      </footer>
+    </main>
+
+    <canvas id="fxCanvas" aria-hidden="true"></canvas>
+    <script src="./script.js"></script>
+  </body>
+</html>
+

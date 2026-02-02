@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiss Day • Permission</title>
+    <meta name="theme-color" content="#ff6fae" />
+    <meta
+      name="description"
+      content="A cute Kiss Day permission page."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <div class="blob blob-c"></div>
+    </div>
+
+    <main class="wrap">
+      <header class="hero">
+        <div class="hero__badge" aria-label="Kiss Day badge">
+          <span class="hero__badgeDot" aria-hidden="true"></span>
+          Kiss Day
+        </div>
+
+        <h1 class="hero__title">
+          Can I <span class="accent">kiss you</span> today?
+        </h1>
+        <p class="hero__subtitle">
+          Permission first. Only “Yes” unlocks the cute page.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" id="btnYes" href="./yes.html" role="button">
+            Yes
+          </a>
+          <button class="btn btn--ghost" id="btnNo" type="button">
+            No
+          </button>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="permission">
+          <div class="permission__bubble" aria-hidden="true">💗</div>
+          <p class="permission__text" id="permissionText">
+            Say “Yes” for a cute surprise page with your GIFs and floating hearts.
+          </p>
+          <p class="permission__hint">
+            (If you tap “No”… it might get shy and move.)
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__text">
+          Made with love • <span id="year"></span>
+        </p>
+      </footer>
+    </main>
+
+    <canvas id="fxCanvas" aria-hidden="true"></canvas>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
